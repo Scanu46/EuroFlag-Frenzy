@@ -1,3 +1,4 @@
+## Intro
 This is my PP2. It is a website with a quiz on european countries. There are different difficulties for the quiz ranging from easy to master. When a question is answered correctly, the button will go green. If answered incorrectly, the button will go red.
 
 ## Media Queries
