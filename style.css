@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+nav{
+  background: rgb(30, 35, 127);
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-family: 'Lobster', sans-serif;
+  color: white;
+  font-size: 30px;
+  line-height: 80px;
+  padding: 0 30px;
+  font-weight: bold;
+  float: left;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+a.active,a:hover{
+  background: #0080ff;
+  transition: .5s;
+  color: white;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 320px){
+  label.logo{
+    font-size: 20px;
+     padding-left: 23px;
+   }
+   .content-area{
+    width: 90%;
+}
+}
+
+@media(max-width: 480px){
+  label.logo{
+    font-size: 24px;
+     padding-left: 20px;
+   }
+
+   .text{
+    font-size: 15px;
+  }
+  .difficulty-header{
+    font-size: 24px;
+  }
+}
+   @media(max-width: 768px){
+  label.logo{
+    font-size: 28px;
+    padding-left: 23px;
+    }
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #0080ff;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: white;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+    nav ul li a{
+      color: white;
+      font-size: 20px;
+      padding: 7px 13px;
+      border-radius: 0px;
+      text-transform: uppercase
+    }
+    .difficulty{
+      font-size: 18px;
+      display: block;
+      height:80px;
+      width: 230px;
+      line-height: 80px;
+      }
+    .difficulty-header{
+      font-size: 24px;
+    }
+    .content-area{
+      width: 80%;
+    }
+    .container{
+      width: 80%;
+    }
+
+
+}
+ @media(min-width: 768px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 20px;
+    }
+    .difficulty{
+      font-size: 30px;
+      display: block;
+      height: 100px;
+      width: 300px;
+      line-height: 100px;
+      }
+      .text{
+        font-size: 20px;
+      }
+      h1{
+        font-size: 40px;
+      }
+      .content-area.content-area{
+        width: 40%;
+      }
+      .container.container{
+        width:40%;
+      }
+
+}
+ 
+.background-image {
+  background-image: url(worldmap.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 100%;
+}
+ .content-area{
+  background-color: #E6ECF0;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 2%;
+  width: 80%;
+}
+h1{
+  font-family: 'Lobster', sans-serif;
+  color: #0080ff;
+}
+.text{
+font-weight: 600;
+text-align: center;
+}
+.difficulty-header{
+  font-size: 30px;
+  font-weight: 800;
+  color: #0080ff;
+}
+.difficulty{
+font-size: 18px;
+display: block;
+height: 80px;
+width: 230px;
+border-radius: 15px;
+margin-top: 15px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 15px;
+font-weight: 500;
+color: white;
+background-color: #0080ff;
+line-height: 80px;
+text-transform: uppercase;
+text-decoration: none;
+}
+:root {
+  --hue-neutral: 200;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+}
+body.correct {
+  --hue: var(--hue-correct);
+}
+
+body.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 1px solid hsl(var(--hue), 100%, 30%);
+  background-color: hsl(var(--hue), 100%, 50%);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
