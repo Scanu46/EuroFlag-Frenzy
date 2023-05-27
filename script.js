@@ -80,7 +80,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    question: 'What is the capital France?',
+    Equestion: 'What is the capital France?',
     answers: [
       { text: 'Paris', correct: true },
       { text: 'Berlin', correct: false },
@@ -90,7 +90,7 @@ const questions = [
     ]
   },
   {
-    question: 'What colours is the Irish flag made up of?',
+    Equestion: 'What colours is the Irish flag made up of?',
     answers: [
       { text: 'Blue, White and Red', correct: false },
       { text: 'Yellow and Red', correct: false },
@@ -99,7 +99,7 @@ const questions = [
     ]
   },
   {
-    question: 'What is the biggest country in Europe?',
+    Equestion: 'What is the biggest country in Europe?',
     answers: [
       { text: 'Germany', correct: false },
       { text: 'Russia', correct: true },
@@ -108,7 +108,7 @@ const questions = [
     ]
   },
   {
-    question: 'What country is shaped like a boot?',
+    Equestion: 'What country is shaped like a boot?',
     answers: [
       { text: 'Denmark', correct: false },
       { text: 'Albania', correct: false },
