@@ -27,8 +27,8 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showQuestion(question) {
-  questionElement.innerText = question.question
+function showQuestion(Equestion) {
+  questionElement.innerText = Equestion.Equestion
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
