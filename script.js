@@ -27,8 +27,8 @@ function setNextQuestion() {
   showQuestion(shuffledQuestions[currentQuestionIndex])
 }
 
-function showQuestion(Equestion) {
-  questionElement.innerText = Equestion.Equestion
+function showQuestion(question) {
+  questionElement.innerText = question.question
   question.answers.forEach(answer => {
     const button = document.createElement('button')
     button.innerText = answer.text
@@ -80,7 +80,7 @@ function clearStatusClass(element) {
 
 const questions = [
   {
-    Equestion: 'What is the capital France?',
+    question: 'What is the capital France?',
     answers: [
       { text: 'Paris', correct: true },
       { text: 'Berlin', correct: false },
@@ -90,7 +90,7 @@ const questions = [
     ]
   },
   {
-    Equestion: 'What colours is the Irish flag made up of?',
+    question: 'What colours is the Irish flag made up of?',
     answers: [
       { text: 'Blue, White and Red', correct: false },
       { text: 'Yellow and Red', correct: false },
@@ -99,7 +99,7 @@ const questions = [
     ]
   },
   {
-    Equestion: 'What is the biggest country in Europe?',
+    question: 'What is the biggest country in Europe?',
     answers: [
       { text: 'Germany', correct: false },
       { text: 'Russia', correct: true },
@@ -108,7 +108,7 @@ const questions = [
     ]
   },
   {
-    Equestion: 'What country is shaped like a boot?',
+    question: 'What country is shaped like a boot?',
     answers: [
       { text: 'Denmark', correct: false },
       { text: 'Albania', correct: false },
